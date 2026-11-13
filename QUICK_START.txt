@@ -1,0 +1,21 @@
+ASTRAQUANT PS18 - WORKING CODE KIT
+=================================
+THIS ZIP DOES NOT CONTAIN REAL DEX CSV DATA. The dataset ZIP attached to the
+conversation contained download scripts and empty raw folders only.
+
+1. Install Python 3.11+ and create virtual environment.
+2. In this folder: pip install -r requirements.txt
+3. Windows: run_demo_windows.bat; Mac/Linux: bash run_demo.sh
+4. Dashboard opens with: streamlit run app/main.py
+5. DEMO USES FABRICATED SAMPLE TRANSACTIONS, NOT REAL FRAUD EVIDENCE.
+6. To use ACTUAL DATA: open README.md, section 'Use real DATASETS', then
+   download raw Zenodo CSVs and export Dune swap/transfer data, and run
+   python -m src.data with your real file paths.
+7. Train real models with python -m src.train --source uniswap --max-events 1000
+8. Real benchmark labels are not provided. The classifier learns auditable
+   weak suspicious/organic candidate labels. Never claim confirmed fraud.
+
+Includes: schema adapters, GCN and GraphSAGE, weak labels, multi-hop transfer
+paths, ML baselines, coordinated group evidence, metrics, plots, Streamlit demo,
+safety and human-review controls, offline synthetic data, tests and original
+user-supplied acquisition kit.

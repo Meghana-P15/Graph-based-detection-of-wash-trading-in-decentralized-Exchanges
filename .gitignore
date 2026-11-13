@@ -1,0 +1,23 @@
+#Python
+.venv/
+venv/
+pycache/
+*.pyc
+.pytest_cache/
+#Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.key
+#Generated datasets
+data/raw/
+data/processed/
+data/processed_real*/
+data/synthetic/
+#Generated models and reports
+models/
+reports/
+#Editor and OS files
+.vscode/
+.DS_Store
+Thumbs.db

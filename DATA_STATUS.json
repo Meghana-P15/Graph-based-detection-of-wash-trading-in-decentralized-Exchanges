@@ -1,0 +1,18 @@
+{
+  "status": "synthetic_fixture_only",
+  "real_dex_raw_csv_files_in_uploaded_zip": 0,
+  "raw_dex_data_downloaded_during_this_build": false,
+  "attached_dataset_zip_contents": "download/export scripts, DuneSQL queries, documentation, empty real-data directories",
+  "included_data": {
+    "synthetic_csv_sources": ["idex", "etherdelta", "uniswap", "pancakeswap"],
+    "synthetic_transfer_csv_chains": ["ethereum", "bnb"],
+    "synthetic_model_weights": true,
+    "synthetic_example_figures": true
+  },
+  "ground_truth": {
+    "verified_fraud_labels": false,
+    "verified_organic_labels": false,
+    "implemented_training_labels": "heuristic_v1_past_only; three classes suspicious candidate / organic candidate / ambiguous"
+  },
+  "safety": "No confirmed fraud claims, no common-wallet-owner claims, no automatic banning"
+}

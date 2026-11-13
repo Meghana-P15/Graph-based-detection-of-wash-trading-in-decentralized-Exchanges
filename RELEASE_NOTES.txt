@@ -1,0 +1,31 @@
+ASTRAQUANT X 2026 PS18 - Runnable Python implementation release
+
+Status: End-to-end code implemented and tested on SYNTHETIC inputs only.
+        Real historical and 2026 DEX CSVs were NOT contained in the uploaded kit.
+
+Verified in this build:
+- Eight pytest checks passing
+- Raw-schema adapters for IDEX, EtherDelta, Uniswap V3, PancakeSwap V3
+- Ingestion of 4 x 640 generated synthetic event rows and 256 transfer rows
+- Separate GCN/GraphSAGE training + saved checkpoints on each DEX adapter
+- Model inference with review/abstention state
+- Event/wallet graph embeddings and charts generated
+- AMM wallet-pool semantics and strict timestamp tests
+- Safety report and human review queue
+
+Included artifacts:
+- Original acquisition kit with 4 Dune SQL query templates and historical downloader
+- data/synthetic/ six CSV/JSON synthetic test fixtures
+- data/processed/ CSVs that come ONLY from the synthetic fixtures
+- models/ pretrained synthetic test weights (do not quote as real fraud research results)
+- reports/ computed synthetic weak-label metrics/plots (do not quote as real accuracy)
+- app/main.py offline dashboard (requires streamlit from requirements)
+- src/ Python application + tests/ automated checks
+
+Missing external inputs:
+- Authentic IDEXTrades.csv, EtherDeltaTrades.csv, token_decimals.json from Zenodo
+- Authentic 2026 Uniswap V3 and PancakeSwap V3 CSV exports from Dune
+- Authentic 2026 token transfer CSV exports, if investigating intermediate paths
+- Independent fraudulent and organic truth labels
+
+For real input use README.md section 2. For limitations see README.md section 4.

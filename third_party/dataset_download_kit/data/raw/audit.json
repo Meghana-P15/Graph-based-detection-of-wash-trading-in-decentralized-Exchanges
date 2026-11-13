@@ -1,0 +1,42 @@
+[
+  {
+    "file": "historical/IDEXTrades.csv",
+    "present": false,
+    "bytes": 0
+  },
+  {
+    "file": "historical/EtherDeltaTrades.csv",
+    "present": false,
+    "bytes": 0
+  },
+  {
+    "file": "historical/token_decimals.json",
+    "present": false,
+    "bytes": 0
+  },
+  {
+    "file": "historical/EtherDollarPrice.csv",
+    "present": false,
+    "bytes": 0
+  },
+  {
+    "file": "recent/uniswap_v3_ethereum_2026.csv",
+    "present": false,
+    "bytes": 0
+  },
+  {
+    "file": "recent/pancakeswap_v3_bnb_2026.csv",
+    "present": false,
+    "bytes": 0
+  },
+  {
+    "file": "recent/ethereum_wallet_transfers_2026.csv",
+    "present": false,
+    "bytes": 0
+  },
+  {
+    "file": "recent/bnb_wallet_transfers_2026.csv",
+    "present": false,
+    "bytes": 0
+  }
+]
